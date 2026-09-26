@@ -14,6 +14,9 @@ class TestMultiply(unittest.TestCase):
         self.assertEqual(multiply(5, 0), 0)
         self.assertEqual(multiply(0, 5), 0)
 
+    def test_multiply_identity(self):
+        self.assertEqual(multiply(7, 1), 7)
+
     def test_multiply_negative(self):
         self.assertEqual(multiply(-3, 4), -12)
         self.assertEqual(multiply(-3, -4), 12)
